@@ -14,6 +14,7 @@
 		763AA9BA287377E000624F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763AA9B9287377E000624F3D /* Assets.xcassets */; };
 		763AA9BD287377E000624F3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763AA9BC287377E000624F3D /* Preview Assets.xcassets */; };
 		763AA9C0287377E000624F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763AA9BE287377E000624F3D /* LaunchScreen.storyboard */; };
+		763AA9CA2873781A00624F3D /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AA9C92873781A00624F3D /* AddTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		763AA9BC287377E000624F3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		763AA9BF287377E000624F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		763AA9C1287377E000624F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763AA9C92873781A00624F3D /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		763AA9AF287377DC00624F3D /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				763AA9C8287377EE00624F3D /* View */,
 				763AA9B0287377DC00624F3D /* AppDelegate.swift */,
 				763AA9B2287377DC00624F3D /* SceneDelegate.swift */,
-				763AA9B4287377DC00624F3D /* ContentView.swift */,
 				763AA9B9287377E000624F3D /* Assets.xcassets */,
 				763AA9BE287377E000624F3D /* LaunchScreen.storyboard */,
 				763AA9C1287377E000624F3D /* Info.plist */,
@@ -76,6 +78,15 @@
 				763AA9BC287377E000624F3D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		763AA9C8287377EE00624F3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				763AA9B4287377DC00624F3D /* ContentView.swift */,
+				763AA9C92873781A00624F3D /* AddTodoView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 				763AA9B3287377DC00624F3D /* SceneDelegate.swift in Sources */,
 				763AA9B5287377DC00624F3D /* ContentView.swift in Sources */,
 				763AA9B8287377DC00624F3D /* ToDo.xcdatamodeld in Sources */,
+				763AA9CA2873781A00624F3D /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +307,7 @@
 				DEVELOPMENT_TEAM = 9S5AJR5C22;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzamolotov.ToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,6 +329,7 @@
 				DEVELOPMENT_TEAM = 9S5AJR5C22;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rzamolotov.ToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
